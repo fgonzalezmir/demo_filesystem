@@ -10,6 +10,8 @@ extends DirEntry(parentPath, name) {
 
   override def asFile: File = this
 
+  def isDirectory: Boolean = false
+  def isFile: Boolean = true
   override def getType: String = "File"
 }
 
